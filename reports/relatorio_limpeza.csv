@@ -1,5 +1,5 @@
 etapa,criterio,linhas_removidas,colunas_removidas,detalhes
-colunas_sem_nome,nome inicia com Unnamed,0,17,colunas auxiliares vazias da planilha
+colunas_sem_nome,nome inicia com Unnamed,0,0,colunas auxiliares vazias da planilha
 peso_vazio,PESO ausente,0,0,linhas sem variavel alvo nao servem para treino supervisionado
 muitos_faltantes,mais de 50% ausente,0,4,"EGS (mm), LR, LCAB, CE"
 selecao_variaveis,manter apenas medidas importantes informadas,0,19,"ANIMAL, PAI, MÃE, P. RACIAL, SEXO, DN, IDADE, PROPRIETÁRIO, PROPRIEDADE, MUNICÍPIO, DATA COLETA, EST. FISIO, AOL (cm²), COL (cm), POL (cm), RATIO (cm), EGE (mm), MOL, EC"
