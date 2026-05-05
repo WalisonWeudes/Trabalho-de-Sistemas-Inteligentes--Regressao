@@ -7,6 +7,7 @@ import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import SGDRegressor
 from sklearn.metrics import mean_absolute_error, root_mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
@@ -230,7 +231,12 @@ def train() -> None:
     
     # Etapa 3.5: Definição dos Modelos Candidatos
     candidate_models = {
-        "Regressao Linear": LinearRegression(),
+        "Regressao Linear (Exata)": LinearRegression(),
+        "Regressao Linear (Gradient Descent)": SGDRegressor(
+            max_iter=1000,      # Número máximo de passadas nos dados
+            tol=1e-3,           # Critério de parada (quando o erro parar de cair)
+            random_state=RANDOM_STATE
+        ),
     }
 
     # Etapa 3.6: Treinamento e Avaliação
