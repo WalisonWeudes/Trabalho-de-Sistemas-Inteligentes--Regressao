@@ -29,7 +29,7 @@ Treinar um modelo de regressao para estimar o `PESO` do animal a partir das dema
 5. Converter valores numericos com virgula decimal para formato numerico.
 6. Separar os dados em 70% treino e 30% teste.
 7. Tratar valores faltantes com imputacao.
-8. Treinar o modelo de regressao linear e avaliar com MAE, RMSE e R2.
+8. Treinar e comparar modelos de regressao usando variaveis numericas e categoricas, com o alvo `PESO` em escala `log1p`, e avaliar com MAE, RMSE e R2.
 
 ## Como executar
 
